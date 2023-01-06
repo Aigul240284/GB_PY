@@ -6,8 +6,6 @@
 # Output: 6
 import random
 n = int(input('Введите длину списка: '))
-
-
 list_1=[]
 for _ in range(n):
     list_1.append(random.randint(-10, 10))
