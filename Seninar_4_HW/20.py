@@ -20,18 +20,28 @@ m = int(input('Input the length of the array2: '))
 
 
 def same_numbers_in_arrays(N, M):
-    array_1 = []
-    for i in range(N):
-        array_1.append(random.randint(1, 10))
-    array_1.sort()
-    array_1 = set(array_1)
+    array_1 = list(random.randint(1, 10) for i in range(N))
+    array_2 = list(random.randint(1, 10) for i in range(M))
     print(array_1)
-    array_2 = []
-    for item in range(M):
-        array_2.append(random.randint(1, 10))
-    array_2.sort()
-    array_2 = set(array_2)
+    array_1 = set(array_1)
     print(array_2)
-    array_3 = array_1.intersection(array_2)
+    array_2 = set(array_2)
+    array_3=array_1 & array_2    
     return array_3
 print(same_numbers_in_arrays(n, m))
+
+n = int(input("Введите количество элементов первого набора n: "))
+m = int(input("введите количество элементов второго набора m: "))
+first = list(random.randint(0, 10) for i in range(n))
+second = list(random.randint(0, 10) for i in range(n))
+
+print('Набор n', first)
+print('Набор m', second)
+
+
+result = set(first) & set(second)
+
+if (len(result) > 0):
+    print('Совпадения: ', result)
+else:
+    print('Нет совпадений!')
