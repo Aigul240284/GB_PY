@@ -283,3 +283,22 @@ if my_list.count(find_str)>1:
     my_index=my_list.index(find_str)
     print(my_index)
     print(my_list.index(find_str,my_index+1))
+    
+print(dir(list))
+print(dir(str))
+
+print("2 3 4".split())
+print(" & ".join(["name","surname"]))
+print("123".isdigit()) #содержит ли только цифры,даже без пробелов
+print('-123'.replace("-", "").isdigit())
+
+print('сЕрГей'.title()) #Сергей
+print('сЕрГей сЕрГей'.capitalize()) #Сергей сергей
+
+a=input("слово: ")
+b=input("слог: ")
+print(a.lower().count(b))
+
+from random import sample
+a=sample(range(1, 10*2),10)
+print(a)

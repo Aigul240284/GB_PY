@@ -1,3 +1,8 @@
-a=input("слово: ")
-b=input("слог: ")
-print(a.lower().count(b))
+from random import sample
+num = int(input("input number"))
+are=[]
+while num>0:
+    a.insert(0, num%2)
+    num//=2
+print(*a,sep='')
+        

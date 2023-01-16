@@ -26,7 +26,7 @@ def max_harvest1(list_1):
 
 def max_harvest2(list_1):
     max_B = 0
-    list_2 = []
+    # list_2 = []
     for i in range(len(list_1)-1):
         harvest = list_1[i-1]+list_1[i]+list_1[i+1]
         if harvest > max_B:
