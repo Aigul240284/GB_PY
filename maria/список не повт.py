@@ -29,6 +29,14 @@ def uniq_el(list_nums:list):
     return result
 
 print(uniq_el(list_num))
+
+#Variant 2
+from collections import Counter
+Lst= [2,2,2,7,23,1,44,44,3,2,10,7,4,11]
+counter=Counter(Lst)
+single=[x for x, n in counter.items() if n ==1]
+print(single)
+
             
         
         
